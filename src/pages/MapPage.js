@@ -1,6 +1,7 @@
 import React from "react";
 import { useJsApiLoader, GoogleMap, Marker } from "@react-google-maps/api";
 import './MapPage.css'
+import MapStarter from "../components/MapStarter.js"
 
 
 
@@ -9,13 +10,17 @@ import './MapPage.css'
 
 const MapPage = () => {
 
-    const {isLoaded} = useJsApiLoader({
-        id: 'google-map-script',
-        googleMapsApiKey: "AIzaSyBSlpCVhIwAKkTdQUQ6ui5B4jXV9QTNof0"
-    })
 
+    const mapLoader = MapStarter();
     const position =  { lat: -10.2800, lng: -36.5400}
 
+
+    
+    const {isLoaded} = useJsApiLoader({
+         id: mapLoader.id,
+         googleMapsApiKey: mapLoader.googleMapsApiKey,
+     })
+  
     return  (
           <div className="mapMajorContainer">
             {
