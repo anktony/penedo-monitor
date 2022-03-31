@@ -12,7 +12,7 @@ const MapPage = () => {
 
 
     const mapLoader = MapStarter();
-    const position =  { lat: -10.2800, lng: -36.5400}
+    const position_penedo =  { lat: -10.2800, lng: -36.5400}
 
 
     
@@ -27,11 +27,11 @@ const MapPage = () => {
                 isLoaded? (
                     <GoogleMap
                         mapContainerStyle={{width: '100%', height: '100%'}}
-                        center = {position}
+                        center = {position_penedo}
                         zoom = {15}>
 
                         <Marker
-                            position={position} 
+                            position={position_penedo} 
                             options={{
                                 label: {
                                     text: "Posição Teste (center)",
