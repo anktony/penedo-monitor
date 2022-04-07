@@ -5,7 +5,7 @@ function App() {
   return (
     <div>
       <MapPage></MapPage>
-      <Test1></Test1>
+      <Test></Test>
     </div>
   );
 }
