@@ -1,5 +1,5 @@
 import React from "react";
-import { useJsApiLoader, GoogleMap, Marker } from "@react-google-maps/api";
+import { useJsApiLoader, GoogleMap} from "@react-google-maps/api";
 import './MapPage.css'
 import MapStarter from "../local/MapStarter.js"
 
