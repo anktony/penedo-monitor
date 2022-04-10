@@ -1,5 +1,5 @@
 import MapPage from './pages/MapPage';
-import Test1 from './Tests/tests.js';
+import Test from './Tests/tests.js';
 
 function App() {
   return (
